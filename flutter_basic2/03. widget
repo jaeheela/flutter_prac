@@ -1,0 +1,41 @@
+1. flutter 상에서의 위젯이란?
+01. widget
+- 독립적으로 실행되는 작은 프로그램
+- 주로 바탕화면 등에서 날씨나 뉴스, 생활정보 등을 보여줌
+- 그래픽이나 데이터 요소를 처리하는 함수를 가지고 있음
+02. 플러터에서의 widget
+- UI를 만들고 구성하는 모든 기본 단위 요소
+- ex. text, icon, image, text field, button ...
+- 눈에 보이지 않는 요소들까지도 모두 위젯
+- ex. center(요소들 정중앙에 위치하는 기능 담당하는 위젯), column, padding ...
+- 위젯들이 모여 하나의 앱이 만들어진 것도 위젯
+03. 위젯의 유형
+- stateless widget : 이전 상호작용의 어떠한 값도 저장 X
+- stateful widget : 값을 지속적으로 추적해 보존
+- inherited widget
+
+
+2. stateless widget VS stateful widget
+01. stateless widgets
+- 상태가 없는 정적인 위젯
+- 스크린 상에 존재만 할 뿐 아무것도 하지 않음
+- 어떠한 실시간 데이터도 저장하지 않음
+- 어떤 변화를 유발하는 값을 가지지 않음
+02. stateful widgets
+- 계속 움직임이나 변화가 있는 동적인 위젯
+- 사용자의 interaction에 따라 모양이 바뀜
+- 데이터를 받게 될 때 모양이 바뀜
+- ex. 체크박스, 텍스트필드, 라디오버튼 ...
+
+
+3. widget tree
+- 플러터는 모든 것이 위젯임
+- 위젯들은 tree구조로 정리 가능
+- 한 위젯 내에 얼마든지 다른 위젯들이 포함될 수 있음
+- 위젯은 부모위젯과 자식위젯으로 구성됨
+- 부모위젯(parent widget) = widget container
+- ex. 로그인 앱 위제 트리
+- => My App > MaterialApp(flutter sdk에서 제공하는 위젯이라고 이름 붙여진 모든 위젯 사용 가능
+    > MyHomePage(커스텀위젯) > Scaffold(앱 화면과 기능을 구성하기 위한 빈페이지를 제공해주는 위젯)
+        Scaffold > AppBar 위젯 > text
+        Scaffold > Center 위젯 > column > image,textField,button,center,column,padding ...

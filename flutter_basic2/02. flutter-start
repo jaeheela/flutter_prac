@@ -1,0 +1,19 @@
+1. android studio(ide) 설치
+-> virtual device(애뮬레이터) 설치 : AVD manager - virtual device 관리자
+-> 플러그인 설치(dart, flutter)
+
+2. vs code(ide) 설치
+-> extension 설치(flutter)
+-> extension 설치(material icon theme)
+
+3. flutter doctor로 실행환경 점검
+-> flutter doctor
+
+4. vscode로 프로젝트 생성 및 애뮬레이터 실행
+-> flutter new project 생성
+-> 벌레모양 클릭 > 녹색 run 실행
+
+5. android studio로 프로젝트 생성 및 애뮬레이터 실행
+-> flutter new project 생성
+-> flutter sdk 경로 확인
+-> 애뮬레이터 선택 후 녹색 run 실행

@@ -1,0 +1,15 @@
+1. SDK란?
+- Software Development Kit
+- 소스코드의 모음과 유틸리티
+- 구글이 제공
+- https://flutter.dev
+
+2.
+- flutter_windows_3.16.8-stable.zip 다운받고 압축풀기
+- bin(binary) 폴더 : 배포된 프로그램이 들어있는 실행파일
+- flutter.bat : 배치파일(여러 명령을 한번에 실행하기 위해 사용하는 파일)
+
+3. flutter 명령만 입력해 fluter.bat 실행시킬 수 있도록 만들기
+- 환경변수 설정
+-> fluter 명령만 입력하면 flutter를 실행시킬 수 있음 : flutter
+-> flutter doctor : 플러터 설치 상태와 실행 환경 점검 가능
